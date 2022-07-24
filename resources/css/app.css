@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .flexCenter {
+        @apply flex items-center justify-center 
+    }
+  
+    .categories {
+        @apply cursor-pointer flexCenter relative px-3 py-2 before:hidden before:absolute before:w-full before:h-0.5 before:bottom-0 before:bg-gray-700 hover:before:block before:transition
+    }
+
+    .underlineEffect {
+        @apply relative before:absolute before:-bottom-1 before:w-9/12 before:h-0.5 before:bg-black rounded !important
+    }
+}
